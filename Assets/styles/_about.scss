@@ -1,0 +1,129 @@
+.about{
+    margin-left: 250px;
+    position: relative;
+
+    h2{
+       @include title;
+       color:  #1F1E31;
+    }
+    h2 .icone{
+        margin-left: 10px;
+        }
+
+    p{
+        @include paragraphe;
+      
+    }
+    .btn{
+        margin-top: 20px;
+        @include button;
+
+    }
+
+    h3{
+       @include lil-title;
+    }
+
+    a{
+        @include button;
+        margin-top: 20px;
+    }
+    i{
+        margin: 0 10px;
+    }
+
+    .Bts{
+        opacity: 1;
+      
+    }
+    .slam-sisr{
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-left: 15px;
+        gap: 10px;
+        margin-top: 25px; 
+        margin-bottom: 25px;  
+        
+        
+    }
+    .slam{
+    opacity: 0;
+    transform: translateX(-350px);
+    transition: 1s ease-in;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.44);
+
+    }
+    .slam h3{
+        margin: 0 auto;
+        text-align: center;
+        color: #1f1e31d8;
+
+    }
+    .slam p {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    .slam h4 {
+        font-family: $font2;
+        margin: 10px;
+        color: rgba(43, 56, 56, 0.879);
+        font-size: 1.2rem;
+    }
+    .slam li {
+        list-style: none;
+        margin: 5px 0;
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.5;
+
+    }
+    .sisr{
+        opacity: 0;
+        transform: translateX(350px);
+        transition: 1s ease-in;
+        background-color: #f4f4f4;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.44);
+    
+        }
+        .sisr h3{
+            margin: 0 auto;
+            text-align: center;
+            color: #1f1e31d8;
+    
+        }
+        .sisr p {
+            font-size: 1rem;
+            line-height: 25px;
+        }
+        .sisr h4 {
+            font-family: $font2;
+            margin: 10px;
+            color: rgba(43, 56, 56, 0.879);
+            font-size: 1.2rem;
+        }
+        .sisr li {
+            list-style: none;
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.5;
+    
+        }
+
+
+    .pro{
+        opacity: 0;
+        transform: translateX(1350px);
+        transition: 1s ease-in;
+    }
+    
+
+
+
+}

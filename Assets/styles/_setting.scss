@@ -1,0 +1,126 @@
+$black1:rgba(38, 31, 40, 0.849);
+$color1:rgba(241, 233, 233, 0.932);
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+   
+    
+ 
+
+}
+
+@mixin title{
+    font-size: 1.8rem;
+    margin-top: 15px;
+    font-family: $font2;
+    text-transform: uppercase;
+    color: #1F1E31;
+    margin-left: 10px;
+
+    &::before{
+     content: "";
+     position: absolute;
+     width: 40px;
+     height: 5px;
+     background: rgb(127, 127, 157);
+     transform: translateY(40px);
+    
+    }
+}
+
+@font-face{
+    font-family: "poppins";
+    src: url(../font/Poppins-ExtraBold.ttf);
+}
+
+@font-face{
+    font-family: "mont";
+    src: url(../font/Montserrat-Medium.ttf);
+
+}
+
+$font2:poppins,serif;
+$font3:mont,serif;
+
+
+body{
+    overflow-x: hidden;
+    background:rgba(128, 128, 128, 0.105);
+}
+
+p{
+    font-family: $font3;
+    line-height: 20px;
+    padding: 10px;
+}
+
+li{
+    font-family: $font2;
+
+}
+@mixin button{
+    padding: 30px;
+        margin: 35px 0;
+        border-radius: 50px;
+        font-family: $font2;
+        text-transform: uppercase;
+        font-size: 1rem;
+        max-width: 100%;
+        margin-left: 50vh;
+        color: aliceblue;
+        background-image: linear-gradient( #434343 0%, rgb(0, 0, 0) 100%);
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+
+    &:hover{
+        background: whitesmoke;
+        color: #1F1E31;
+    }
+
+    
+
+}
+
+@mixin lil-title{
+    font-size: 1.4rem;
+    font-family: $font2;
+    margin-left: 25px;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-transform:uppercase;
+    color: #1f1e31d8;
+ 
+    & i{
+       margin-left: 10px;
+     };
+}
+
+@mixin paragraphe{
+    line-height: 26px;
+    font-size: 1.1rem;
+    padding-top: 25px;
+    color: rgba(39, 40, 41, 0.933);
+    text-align: justify;
+
+    strong{
+        color: #1F1E31;
+    }
+}
+
+

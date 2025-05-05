@@ -1,0 +1,141 @@
+.contact{
+    margin-left: 250px;
+    margin-top: 50px;
+    background: linear-gradient(to bottom, #c1d1d4, #ffffff);
+
+
+    h2{
+        @include title;
+        color:  #1F1E31;
+        margin-top: 10px;
+        margin-bottom: 35px;
+    }
+    p {
+        @include paragraphe;
+       font-size: 1.1rem;
+       margin-bottom: 20px;
+
+    }
+
+    .infos-form{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        gap: 20px;
+    }
+
+    .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border-right: 1px solid #1F1E31;
+    }
+
+    .infos ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 1.2rem;
+        font-family: $font2;
+    }
+    .infos ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.2rem;
+        font-family: $font2;
+    }
+    .infos ul li i {
+        font-size: 1.5rem;
+        color: #1F1E31;
+
+       
+    }
+
+    .infos ul li a {
+        text-decoration: none;
+        color: #1F1E31;
+        font-family: $font2;
+        font-size: 1.2rem;
+    }
+    .infos ul li a:hover {
+        color: #1F1E31;
+        text-decoration: underline;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 20px;
+        font-family: $font2;
+      
+    }
+    
+    #map {
+        height: 400px;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        background: linear-gradient(to bottom, #c1d1d4, #ffffff);
+        
+    }
+    
+
+
+    .form form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 90%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.56);
+        background: linear-gradient(to bottom, #c1d1d4, #ffffff);
+    }
+
+    .form form input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #1F1E31;
+        font-size: 1.2rem;
+        font-family: $font2;
+        color: #1F1E31;
+    }
+    .form form textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #1F1E31;
+        font-size: 1.2rem;
+        font-family: $font2;
+        color: #1F1E31;
+        resize: none;
+    }
+    .form form button {
+        @include button;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: $font2;
+        color: #1F1E31;
+        margin-left: 0px;
+        padding: 5px;
+        color: #ffffff;
+    }
+
+   
+
+
+
+}

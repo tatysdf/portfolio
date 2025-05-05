@@ -1,0 +1,44 @@
+.parcours{
+    margin-left: 250px;
+    opacity: 0;
+    transform: translateX(-350px);
+    transition: 1s ease-in; 
+    
+
+    h2{
+        @include title;
+    }
+    
+    h3{
+        @include lil-title;
+    }
+
+    h4{
+        font-family: $font3;
+        font-style: italic;
+        padding-left: 40px;
+        text-shadow: rgb(0, 0, 0);
+
+    }
+
+    ul{
+        margin-top: 15px;
+    }
+
+    p{
+        @include paragraphe;
+    }
+
+
+    i{
+        margin: 0 10px;
+    }
+
+    .btn {
+        @include button;
+        
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    
+}
