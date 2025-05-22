@@ -15,11 +15,6 @@
        font-size: 1.2rem;
        
     }
-    h3{
-        text-transform: uppercase;
-        font-size: 0.8rem;
-    }
-
 
     .dev{
         display: flex;
@@ -69,6 +64,11 @@
     
     
  }
+ @media screen and (max-width: 900px) {
+   width: 150px;
+   height: 150px;
+    
+ }
    
 }
 .skill h3 {
@@ -78,6 +78,11 @@
     margin-left: 0px;
     font-size: 1.2rem;
     color: #1F1E31;
+
+       @media screen and (max-width: 950px) {
+            
+                font-size: 0.9rem;
+             }
     
 }
 .skill p {

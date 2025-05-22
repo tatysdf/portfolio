@@ -5,6 +5,13 @@
         @include title;
         color:  #1F1E31;
     }
+    p{
+        @include paragraphe;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
     
 .projects{
 
@@ -12,12 +19,14 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    flex-wrap: wrap;
 
     .projet {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         margin: 20px auto;
         width: 300px;
         height: 400px;

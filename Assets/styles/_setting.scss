@@ -40,6 +40,19 @@ html{
      transform: translateY(40px);
     
     }
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+       
+        
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 1.2rem;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        
+    }
 }
 
 @font-face{
@@ -109,7 +122,17 @@ li{
     & i{
        margin-left: 10px;
      };
-}
+
+     @media screen and (max-width: 900px) {
+        font-size: 1.2rem;
+        
+     }
+        @media screen and (max-width: 600px) {
+            font-size: 1rem;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+} }
 
 @mixin paragraphe{
     line-height: 26px;
@@ -121,6 +144,15 @@ li{
     strong{
         color: #1F1E31;
     }
+    @media screen and (max-width: 900px) {
+        font-size: 0.9rem;
+        
+     }
+        @media screen and (max-width: 600px) {
+            font-size: 0.8rem;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-bottom: 10px;
 }
 
-
+}

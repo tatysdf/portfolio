@@ -8,11 +8,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #f5f5f5; /* Fallback color */
+    background-color: #f5f5f5; 
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.252); /* Adjust the opacity as needed */
+    background-color: rgba(0, 0, 0, 0.252); 
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/img/bg5.jpg);
     background-position: center;
+
+    
 
 
    
@@ -36,6 +38,16 @@
     justify-content: center;
     @include title;
     color: white;
+
+    @media screen and (max-width: 800px) {
+      font-size: 2rem;
+      padding-top: 200px;
+      padding-left: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      text-align: center;
+      
+    }
    }
  
 
@@ -68,71 +80,20 @@
       animation: spaceship 30s infinite linear;
 
    }
-   @keyframes spaceship {
-    0% {
-      top: 80%;
-      left: 25%;
-      transform: rotate(0deg);
-    } 
-    10% {
-      top: -40%;
-      left: 25%;
-      transform: rotate(0deg);
-    } 
-    20% {
-
-      left: 35%;
-      top: 20%;
-      
-      transform: rotate(190deg);
-    } 
-    30% {
-      top: 120%;
-      left:35%;
-      transform: rotate(162deg);
-    } 
-    40% {
-      top: 85%;
-      left: 50%;
-      transform: rotate(2deg);
-    } 
-    50% {
-      top: -40%;
-      left: 50%;
-      transform: rotate(1deg);
-    } 
-    60% {
-      top: 20%;
-      left:75%;
-      transform: rotate(185deg);
-    } 
-    70% {
-      top: 130%;
-      left: 75%;
-      transform: rotate(160deg);
-    }
-    80% {
-      top: 90%;
-      left: 90%;
-      transform: rotate(0deg);
-    } 
-    90% {
-      top: 140%;
-      left: 90%;
-      transform: rotate(0deg);
-    }
-    100% {
-      top: -20%;
-      left: 25%;
-      transform: rotate(0deg);
-    } 
-
-   }
    span {
      
       text-align: center;
       margin-top: 20px;
       margin-bottom: 20px;
+
+      
+    @media screen and (max-width: 800px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+        
+    }
       
       
    };
@@ -165,6 +126,10 @@
 
 
 
+    @media screen and (max-width: 800px) {
+        margin-left: 0px;
+        
+    }
       
       
    }

@@ -43,6 +43,13 @@ header {
   min-height: 100vh;
   background-image: linear-gradient(#434343 0%, rgba(0, 0, 0, 0.871) 100%);
 }
+@media screen and (max-width: 800px) {
+  header {
+    background: none;
+    width: 0;
+    height: 0;
+  }
+}
 header .profil img {
   border-radius: 100px;
   display: flex;
@@ -51,6 +58,11 @@ header .profil img {
   width: 70%;
   margin: 0 auto;
   margin-top: 10px;
+}
+@media screen and (max-width: 800px) {
+  header .profil img {
+    display: none;
+  }
 }
 header h2 {
   text-align: center;
@@ -61,6 +73,11 @@ header h2 {
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.8));
   margin-bottom: 0px;
+}
+@media screen and (max-width: 800px) {
+  header h2 {
+    display: none;
+  }
 }
 header .social-media {
   height: 35px;
@@ -75,6 +92,11 @@ header .social-media ul {
   margin-bottom: 0px;
   font-size: 1rem;
   color: rgb(236, 222, 222);
+}
+@media screen and (max-width: 800px) {
+  header .social-media ul {
+    display: none;
+  }
 }
 header .social-media ul li {
   padding: 5px;
@@ -96,6 +118,11 @@ header .social-media ul li a {
 }
 header .social-media ul li a:hover {
   text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+  header .social-media ul li {
+    display: none;
+  }
 }
 header nav ul {
   display: flex;
@@ -140,6 +167,11 @@ header nav ul li a:hover:hover {
   text-decoration: none;
   color: inherit;
 }
+@media screen and (max-width: 800px) {
+  header nav ul {
+    display: none;
+  }
+}
 header .footer {
   width: 250px;
   display: flex;
@@ -150,6 +182,11 @@ header .footer {
   font-size: 1rem;
   color: rgb(7, 7, 7);
   background: linear-gradient(to bottom, #c1d1d4, #ffffff);
+}
+@media screen and (max-width: 800px) {
+  header .footer {
+    display: none;
+  }
 }
 
 .about {
@@ -173,6 +210,19 @@ header .footer {
   background: rgb(127, 127, 157);
   transform: translateY(40px);
 }
+@media screen and (max-width: 900px) {
+  .about h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 .about h2 .icone {
   margin-left: 10px;
 }
@@ -185,6 +235,19 @@ header .footer {
 }
 .about p strong {
   color: #1F1E31;
+}
+@media screen and (max-width: 900px) {
+  .about p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 .about .btn {
   margin-top: 20px;
@@ -218,6 +281,19 @@ header .footer {
 }
 .about h3 i {
   margin-left: 10px;
+}
+@media screen and (max-width: 900px) {
+  .about h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about h3 {
+    font-size: 1rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 .about a {
   padding: 30px;
@@ -271,6 +347,16 @@ header .footer {
   font-size: 1rem;
   line-height: 25px;
 }
+@media screen and (max-width: 950px) {
+  .about .slam p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about .slam p {
+    font-size: 0.8rem;
+  }
+}
 .about .slam h4 {
   font-family: poppins, serif;
   margin: 10px;
@@ -302,6 +388,16 @@ header .footer {
   font-size: 1rem;
   line-height: 25px;
 }
+@media screen and (max-width: 950px) {
+  .about .sisr p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about .sisr p {
+    font-size: 0.8rem;
+  }
+}
 .about .sisr h4 {
   font-family: poppins, serif;
   margin: 10px;
@@ -331,9 +427,9 @@ header .footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #f5f5f5; /* Fallback color */
+  background-color: #f5f5f5;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.252); /* Adjust the opacity as needed */
+  background-color: rgba(0, 0, 0, 0.252);
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/img/bg5.jpg);
   background-position: center;
 }
@@ -366,6 +462,29 @@ header .footer {
   background: rgb(127, 127, 157);
   transform: translateY(40px);
 }
+@media screen and (max-width: 900px) {
+  .bg-img h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bg-img h1 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .bg-img h1 {
+    font-size: 2rem;
+    padding-top: 200px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+}
 .bg-img .typing-animation {
   white-space: nowrap;
   overflow: hidden;
@@ -396,67 +515,18 @@ header .footer {
   z-index: -1;
   animation: spaceship 30s infinite linear;
 }
-@keyframes spaceship {
-  0% {
-    top: 80%;
-    left: 25%;
-    transform: rotate(0deg);
-  }
-  10% {
-    top: -40%;
-    left: 25%;
-    transform: rotate(0deg);
-  }
-  20% {
-    left: 35%;
-    top: 20%;
-    transform: rotate(190deg);
-  }
-  30% {
-    top: 120%;
-    left: 35%;
-    transform: rotate(162deg);
-  }
-  40% {
-    top: 85%;
-    left: 50%;
-    transform: rotate(2deg);
-  }
-  50% {
-    top: -40%;
-    left: 50%;
-    transform: rotate(1deg);
-  }
-  60% {
-    top: 20%;
-    left: 75%;
-    transform: rotate(185deg);
-  }
-  70% {
-    top: 130%;
-    left: 75%;
-    transform: rotate(160deg);
-  }
-  80% {
-    top: 90%;
-    left: 90%;
-    transform: rotate(0deg);
-  }
-  90% {
-    top: 140%;
-    left: 90%;
-    transform: rotate(0deg);
-  }
-  100% {
-    top: -20%;
-    left: 25%;
-    transform: rotate(0deg);
-  }
-}
 .bg-img span {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+  .bg-img span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
 }
 .bg-img span i {
   font-size: 2.5rem;
@@ -475,6 +545,11 @@ header .footer {
   background-color: #f5f5f5;
   color: #434343;
   border: 2px solid #434343;
+}
+@media screen and (max-width: 800px) {
+  .bg-img {
+    margin-left: 0px;
+  }
 }
 
 .parcours {
@@ -499,6 +574,19 @@ header .footer {
   background: rgb(127, 127, 157);
   transform: translateY(40px);
 }
+@media screen and (max-width: 900px) {
+  .parcours h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .parcours h2 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 .parcours h3 {
   font-size: 1.4rem;
   font-family: poppins, serif;
@@ -511,6 +599,19 @@ header .footer {
 }
 .parcours h3 i {
   margin-left: 10px;
+}
+@media screen and (max-width: 900px) {
+  .parcours h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .parcours h3 {
+    font-size: 1rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 .parcours h4 {
   font-family: mont, serif;
@@ -530,6 +631,19 @@ header .footer {
 }
 .parcours p strong {
   color: #1F1E31;
+}
+@media screen and (max-width: 900px) {
+  .parcours p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .parcours p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 .parcours i {
   margin: 0 10px;
@@ -577,17 +691,59 @@ header .footer {
   background: rgb(127, 127, 157);
   transform: translateY(40px);
 }
+@media screen and (max-width: 900px) {
+  .projs h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projs h2 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+.projs p {
+  line-height: 26px;
+  font-size: 1.1rem;
+  padding-top: 25px;
+  color: rgba(39, 40, 41, 0.933);
+  text-align: justify;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+.projs p strong {
+  color: #1F1E31;
+}
+@media screen and (max-width: 900px) {
+  .projs p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projs p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 .projs .projects {
   position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
+  flex-wrap: wrap;
 }
 .projs .projects .projet {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 20px auto;
   width: 300px;
   height: 400px;
@@ -621,6 +777,19 @@ header .footer {
 }
 .projs .projects p strong {
   color: #1F1E31;
+}
+@media screen and (max-width: 900px) {
+  .projs .projects p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projs .projects p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 .projs .projects .add {
   display: flex;
@@ -677,6 +846,19 @@ header .footer {
 .projs .projects .projet h3 i {
   margin-left: 10px;
 }
+@media screen and (max-width: 900px) {
+  .projs .projects .projet h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projs .projects .projet h3 {
+    font-size: 1rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 
 .skills {
   margin-left: 250px;
@@ -703,6 +885,19 @@ header .footer {
   background: rgb(127, 127, 157);
   transform: translateY(40px);
 }
+@media screen and (max-width: 900px) {
+  .skills h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skills h2 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 .skills p {
   line-height: 26px;
   font-size: 1.1rem;
@@ -714,9 +909,18 @@ header .footer {
 .skills p strong {
   color: #1F1E31;
 }
-.skills h3 {
-  text-transform: uppercase;
-  font-size: 0.8rem;
+@media screen and (max-width: 900px) {
+  .skills p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skills p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 .skills .dev {
   display: flex;
@@ -756,6 +960,12 @@ header .footer {
   display: block;
   margin: 0 auto;
 }
+@media screen and (max-width: 900px) {
+  .skills .skill {
+    width: 150px;
+    height: 150px;
+  }
+}
 .skills .skill h3 {
   font-family: poppins, serif;
   text-align: center;
@@ -763,6 +973,11 @@ header .footer {
   margin-left: 0px;
   font-size: 1.2rem;
   color: #1F1E31;
+}
+@media screen and (max-width: 950px) {
+  .skills .skill h3 {
+    font-size: 0.9rem;
+  }
 }
 .skills .skill p {
   line-height: 26px;
@@ -777,6 +992,19 @@ header .footer {
 }
 .skills .skill p strong {
   color: #1F1E31;
+}
+@media screen and (max-width: 900px) {
+  .skills .skill p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skills .skill p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 .skills .progress {
   margin-top: 10px;
@@ -843,6 +1071,19 @@ header .footer {
 .skills .tool p strong {
   color: #1F1E31;
 }
+@media screen and (max-width: 900px) {
+  .skills .tool p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skills .tool p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 
 .contact {
   margin-left: 250px;
@@ -868,6 +1109,19 @@ header .footer {
   background: rgb(127, 127, 157);
   transform: translateY(40px);
 }
+@media screen and (max-width: 900px) {
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact h2 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 .contact p {
   line-height: 26px;
   font-size: 1.1rem;
@@ -879,6 +1133,19 @@ header .footer {
 }
 .contact p strong {
   color: #1F1E31;
+}
+@media screen and (max-width: 900px) {
+  .contact p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 .contact .infos-form {
   display: grid;
@@ -1023,6 +1290,19 @@ header .footer {
   background: rgb(127, 127, 157);
   transform: translateY(40px);
 }
+@media screen and (max-width: 900px) {
+  .veilles h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .veilles h2 {
+    font-size: 1.2rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 .veilles h3 {
   font-size: 1.4rem;
   font-family: poppins, serif;
@@ -1038,6 +1318,19 @@ header .footer {
 .veilles h3 i {
   margin-left: 10px;
 }
+@media screen and (max-width: 900px) {
+  .veilles h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .veilles h3 {
+    font-size: 1rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
 .veilles p {
   line-height: 26px;
   font-size: 1.1rem;
@@ -1049,4 +1342,17 @@ header .footer {
 }
 .veilles p strong {
   color: #1F1E31;
+}
+@media screen and (max-width: 900px) {
+  .veilles p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .veilles p {
+    font-size: 0.8rem;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=index.css.map */

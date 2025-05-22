@@ -66,6 +66,15 @@
     .slam p {
         font-size: 1rem;
         line-height: 25px;
+
+        @media screen and (max-width: 950px) {
+            font-size: 0.9rem;
+            
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 0.8rem;
+            
+        }
     }
     .slam h4 {
         font-family: $font2;
@@ -100,6 +109,15 @@
         .sisr p {
             font-size: 1rem;
             line-height: 25px;
+
+               @media screen and (max-width: 950px) {
+            font-size: 0.9rem;
+            
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 0.8rem;
+            
+        }
         }
         .sisr h4 {
             font-family: $font2;
